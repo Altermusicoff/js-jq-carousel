@@ -1,0 +1,100 @@
+/* Proprietà generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(171, 238, 14);
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+/* No blue highlight on click */
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Proprietà main */
+.slideContainer{
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    min-width: 550px;
+}
+.slideContainer h1{
+    color: white;
+    font-size: 55px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 0 black;
+}
+
+/* Proprietà imgs */
+.imgs-list{
+    position: relative;
+    max-width: 1000px;
+    min-height: 300px;
+    max-height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Immagini sfondo */
+.imgs-list img{
+    width: 100%;
+    display: none;
+}
+.imgs-list img.active{
+    display: inline-block;
+}
+
+/* Icons freccie */
+.imgs-list .fa-caret-square-left, .imgs-list .fa-caret-square-right{
+    font-size: 45px;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 -1px 0 black;
+    cursor: pointer;
+    transition: color 0.4s, text-shadow 0.4s;
+}
+.imgs-list i:hover{
+    color: black;
+    text-shadow: 0 1px 0 white, 1px 0 0 white, -1px 0 0 white, 0 -1px 0 white;
+}
+/* Freccia sx */
+.imgs-list i#left-arrow{
+    left: 20px;
+}
+/* Freccia dx */
+.imgs-list i#right-arrow{
+    right: 20px;
+}
+
+/* Pallini imgs */
+.dots {
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dots i{
+    cursor: pointer;
+    transition: color 0.4s, text-shadow 0.4s;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 -1px 0 black;
+}

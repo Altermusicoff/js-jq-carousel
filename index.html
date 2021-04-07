@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Carousel</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="slideContainer">
+            <h1>Alter Carousel</h1>
+
+            <div class="imgs-list noSelect">
+                <i class="far fa-caret-square-left" id="left-arrow"></i>
+
+                <!-- Img 0 -->
+                <img class="active firstImg"
+                    src="img/cabin.png" alt="Img-0"
+                    data-imgPos='0'>
+
+                <!-- Img 1 -->
+                <img src="img/cake.png"
+                    alt="Img-1" data-imgPos='1'>
+
+                <!-- Img 2 -->
+                <img src="img/game.png"
+                    alt="Img-2" data-imgPos='2'>
+
+                <!-- Img 3 -->
+                <img class="lastImg"
+                    src="img/circus.png" alt="Img-3"
+                    data-imgPos='3'>
+
+                <i class="far fa-caret-square-right" id="right-arrow"></i>
+
+                <div class="dots">
+                    <i class="fas fa-circle" id="firstDot" data-imgPos='0'></i>
+                    <i class="far fa-circle" data-imgPos='1'></i>
+                    <i class="far fa-circle" data-imgPos='2'></i>
+                    <i class="far fa-circle" id="lastDot" data-imgPos='3'></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
